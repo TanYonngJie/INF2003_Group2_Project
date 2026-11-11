@@ -2,7 +2,7 @@
 
 ## Setup Instructions
 
-### Step 1. Download MongoDB (If not downloaded)
+### Step 1. Download MongoDB (From https://www.mongodb.com/try/download/community)
 
 ### Step 2. Download PostgreSQL (PgAdmin4) (From https://www.postgresql.org/download/)
 - Leave everything as default (including file path).
