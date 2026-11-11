@@ -2,17 +2,31 @@
 
 ## Setup Instructions
 
-**1. Install Dependencies**
-Run this command in the terminal to install the required Python libraries:
-pip install -r requirements.txt
+### Step 1. Download MongoDB (If not downloaded)
 
-**2. Database Setup**
-*   **PostgreSQL:** Install PgAdmin4 and create a database named `ecommerce_sql`. Run the provided `postgres_setup.sql` script to build the tables and insert the data.
-*   **MongoDB:** Install MongoDb and create a database named `ecommerce`. Import the provided `mongo_setup.json` file into a collection named `behavior_logs`.
+### Step 2. Download PostgreSQL (PgAdmin4)
+- Leave everything as default (including file path).
+- Set your master password and remember it for later use.
+- Leave port as `5432`.
+- When prompted to install additional applications via Stack Builder, press **Cancel**.
 
-**3. Configure Credentials**
-Open `db_controller.py` and update the `PG_PASSWORD` variable to match your local PostgreSQL password, default password for code is Password1234
+### Step 3. Download & Extract Project Folder
 
-**4. Run the App**
-Run this command in the terminal to start the application:
-streamlit run app.py
+### Step 4. Open MongoDB & Establish New Connection
+- Create a new database under your connection:
+  - **Database Name:** `ecommerce`
+  - **Collection Name:** `behavior_logs`
+- Click the green **Add Data** button.
+- Import `mongo_setup.json`.
+- MongoDB setup is complete.
+
+### Step 5. Open PgAdmin4
+- Press the white arrow next to PostgreSQL 18 to expand the folder.
+- Enter your master password.
+- Right-click **Databases** and create a new database called `ecommerce_sql`.
+
+### Step 6. Open Coding Platform (VS Code Preferred)
+- Open your terminal *inside* the project folder.
+- Run the following command to install required dependencies:
+  ```bash
+  pip install -r requirements.txt
