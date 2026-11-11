@@ -1,0 +1,29 @@
+Step 1). Download MongoDB (If not downloaded)
+
+Step 2). Download PostgreSQL (PgAdmin4)
+ - Everything Leave As Default (Including File Path)
+ - Set Password & Remember For Use Later
+ - Leave port as "5432"
+ - When prompted to install applications, press "Cancel"
+
+Step 3). Download & Extract Project Folder
+
+Step 4). Open MongoDB And Establish New Connection
+ - Create New Database Under The New Connection 
+  > Database Name: ecommerce
+  > Collection Name: behavior_logs
+ - Click Green "Add Data" Button
+ - Import "mongo_setup.json"
+ - MongoDB Set-Up Done
+
+Step 5). Open PgAdmin4
+ - Press white arrow next to PostgreSQL 18 to expand the folder
+ - Enter Password You Created
+ - Right click databases and create new database called "ecommerce_sql"
+
+Step 6). Open Coding Platform (VS Code Preferred)
+ - Open Terminal Inside The Project Folder
+ - pip install -r requirements.txt (copy and paste into terminal)
+ - & "C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d ecommerce_sql -f postgres_setup.sql (copy and paste into terminal, this will prompt you for your SQL password)
+ - open db_controller.py and replace 'PG_PASSWORD' with your password
+ - Run application with 'streamlit run app.py'
