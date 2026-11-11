@@ -11,7 +11,7 @@ pip install -r requirements.txt
 *   **MongoDB:** Install MongoDb and create a database named `ecommerce`. Import the provided `mongo_setup.json` file into a collection named `behavior_logs`.
 
 **3. Configure Credentials**
-Open `db_controller.py` and update the `PG_PASSWORD` variable to match your local PostgreSQL password.
+Open `db_controller.py` and update the `PG_PASSWORD` variable to match your local PostgreSQL password, default password for code is Password1234
 
 **4. Run the App**
 Run this command in the terminal to start the application:
