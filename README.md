@@ -4,7 +4,7 @@
 
 ### Step 1. Download MongoDB (If not downloaded)
 
-### Step 2. Download PostgreSQL (PgAdmin4)
+### Step 2. Download PostgreSQL (PgAdmin4) (From https://www.postgresql.org/download/)
 - Leave everything as default (including file path).
 - Set your master password and remember it for later use.
 - Leave port as `5432`.
